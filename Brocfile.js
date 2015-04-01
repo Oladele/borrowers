@@ -17,7 +17,6 @@ var app = new EmberApp();
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
-app.import('bower_components/picnic/releases/picnic.min.css');
 
 app.import('vendor/fontello/fontello.css'); 
 app.import('vendor/fontello/font/fontello.ttf', {
@@ -32,5 +31,8 @@ app.import('vendor/fontello/font/fontello.svg', {
 app.import('vendor/fontello/font/fontello.woff', { 
   destDir: 'font'
 });
+
+app.import('bower_components/picnic/releases/picnic.min.css');
+app.import('bower_components/picnic/releases/plugins.min.css');
 
 module.exports = app.toTree();
