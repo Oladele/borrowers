@@ -1,3 +1,8 @@
+<div>
+  <h2>Friend details</h2>
+  <p>{{model.firstName}}</p>
+  <p>{{model.lastName}}</p>
+</div>
 <form {{action "save" on="submit"}}> 
   <p>
     <label>First Name:
@@ -17,6 +22,11 @@
   <p>
     <label>
       Twitter {{input value=model.twitter}}
+    </label>
+  </p>
+  <p>
+    <label>
+      Trusted? {{input type="checkbox" name=trusted}}
     </label>
   </p>
   <input type="submit" value="Save"/>
