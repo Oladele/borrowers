@@ -3,6 +3,7 @@
   <thead>
     <tr> 
       <th>Description</th>
+      <th>Notes</th>
       <th>Borrowed since</th>
       <th></th>
       <th></th>
@@ -10,12 +11,7 @@
   </thead>
   <tbody>
     {{#each article in model}}
-      <tr>
-        <td>{{article.description}}</td>
-        <td>{{article.createdAt}}</td>
-        <td></td>
-        <td></td>
-      </tr>
+      {{articles/article-row article=article save="save" articleStates=possibleStates}}
     {{/each}}
   </tbody>
 </table>
